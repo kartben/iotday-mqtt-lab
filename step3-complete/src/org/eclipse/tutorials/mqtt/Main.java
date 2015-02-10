@@ -102,7 +102,7 @@ public class Main extends Application {
 			});
 			mqttClient.connect();
 			mqttClient.subscribe(
-					"jambit-workshop/greenhouse/sensors/temperature", 1);
+					"jambit-workshop/ben-greenhouse/sensors/temperature", 1);
 
 		} catch (MqttException e) {
 			// TODO Auto-generated catch block
