@@ -56,7 +56,7 @@ public class Main {
 				}
 			});
 			mqttClient.connect();
-			mqttClient.subscribe("jambit-workshop/greenhouse/sensors/#", 1);
+			mqttClient.subscribe("jambit-workshop/ben-greenhouse/sensors/#", 1);
 
 		} catch (MqttException e) {
 			e.printStackTrace();

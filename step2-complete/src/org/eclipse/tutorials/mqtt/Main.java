@@ -95,7 +95,7 @@ public class Main {
 								c.setTime(new Date(endMinute));
 
 								topicPub = String
-										.format("jambit-workshop/CONSOLIDATED/greenhouse/data/%s/%d/%02d/%d/%d/%d",
+										.format("jambit-workshop/CONSOLIDATED/ben-greenhouse/data/%s/%d/%02d/%d/%d/%d",
 												e.getKey(),
 												c.get(Calendar.YEAR),
 												c.get(Calendar.MONTH) + 1,
@@ -135,7 +135,7 @@ public class Main {
 					try {
 						mqttClient
 								.subscribe(
-										"jambit-workshop/greenhouse/sensors/temperature",
+										"jambit-workshop/ben-greenhouse/sensors/temperature",
 										1);
 					} catch (MqttException e) {
 						System.out.println("Connection failed: ");
